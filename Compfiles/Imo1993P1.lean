@@ -18,4 +18,5 @@ Let $f\left(x\right)=x^n+5x^{n-1}+3$, where $n>1$ is an integer. Prove that $f\l
 
 namespace Imo1993P1
 
-problem imo1993_p1 (n : ℕ) (hn : 1 < n) (f : Polynomial ℤ) (hf : f = X ^ n + 5 * X ^ (n - 1) + 3) : ¬ (∃ (g h : Polynomial ℤ), f = g * h ∧ ¬ (∃ g h : Polynomial ℤ, f = g * h ∧ ¬g = 1 ∧ ¬h = 1))  := by sorry
+problem imo1993_p1 (n : ℕ) (hn : 1 < n) (f : Polynomial ℤ) (hf : f = X ^ n + 5 * X ^ (n - 1) + 3) :
+ (∀ (g h : Polynomial ℤ), (¬(f = g * h)) ∨  (∀ (m :ℤ),  ¬ g = (⟨m⟩ : Polynomial ℤ) ∧ ¬h = (⟨m⟩: Polynomial ℤ) )) := by sorry 
