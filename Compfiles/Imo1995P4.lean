@@ -21,4 +21,4 @@ Find the maximum value that $x_0$ can have.
 
 namespace Imo1995P4
 
-problem imo1995_p4 (x : ℕ → ℝ) (h : x 0 = x 1995) (h1 : ∀ i : ℕ, 0<i ∧i ≤ 1995 → x (i - 1) + (2 / x (i - 1)) = 2 * x i + (1 / x i)) : x 0 ≤ 2^997  ∧ (∃ x : ℕ → ℝ, x 0 = 2^997 ∧ ∀ i : ℕ, 0<i∧i ≤ 1995 → x (i - 1) + (2 / x (i - 1)) = 2 * x i + (1 / x i)) := by sorry
+problem imo1995_p4 (x : ℕ → ℝ) (h : x 0 = x 1995) (h1 : ∀ i : ℕ, 0<i ∧i ≤ 1995 → x (i - 1) + (2 / x (i - 1)) = 2 * x i + (1 / x i)) : x 0 ≤ 2^997  ∧ (∃ x : ℕ → ℝ, x 0 = 2^997 ∧ x 0 = x 1995 ∧∀ i : ℕ, 0<i∧i ≤ 1995 → x (i - 1) + (2 / x (i - 1)) = 2 * x i + (1 / x i)) := by sorry
